@@ -851,6 +851,7 @@ ts.addWidget({
 				left : header.offset().left - win.scrollLeft() - spacing,
 				visibility : vis
 			});
+			$t.toggleClass('with-active-sticky-header', t2.hasClass(pre + 'visible'));
 			if (vis !== laststate || e.type === 'resize'){
 				// make sure the column widths match
 				resizeHdr();
